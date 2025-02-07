@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="weatherapp.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dartmouth Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form id="search-form">
+          <input
+            required
+            class="enter-city"
+            type="search"
+            placeholder="Enter a city.."
+            id="search-input"
+          />
+          <input class="search-city" type="submit" value="Search" />
+        </form>
+        <hr />
+      </header>
+    </div>
+    <main>
+      <div class="current-weather">
+        <div>
+          <h1 class="current-city" id="current-city">Dartmouth</h1>
+          <p class="current-details">
+            <span id="current-date"></span>
+            , fog <br />
+            Humidity: <strong>88%</strong>, Wind: <strong>3MPH</strong>
+          </p>
+        </div>
+        <div class="temperature">
+          <span class="foggy">🌫️</span>
+          <span class="celcius" id="current-temperature">14 </span>
+          <span class="degrees"> °C </span>
+        </div>
+      </div>
+    </main>
+    <hr />
+    <div class="weekly-forecast">
+      <ul>
+        <li>
+          Sun 🌥️
+          <div><strong>4°C</strong> - 10°C</div>
+        </li>
+        <li>
+          Mon ☁️
+          <div><strong>4°C</strong> - 10°C</div>
+        </li>
+        <li>
+          Tue 🌧️
+          <div><strong>8°C</strong> - 12°C</div>
+        </li>
+        <li>
+          Wed 🌧️
+          <div><strong>8°C</strong> - 12°C</div>
+        </li>
+        <li>
+          Thu 🌦️
+          <div><strong>3°C</strong> - 8°C</div>
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <p class="project-code">
+        This project was coded by
+        <a href="" target="_blank">Leah Matthews</a> and is
+        <a href="" target="_blank">on GitHub</a> and
+        <a href="" target="_blank">hosted on Netlify</a>.
+      </p>
+    </footer>
+    <script src="weatherapp.js"></script>
+  </body>
+</html>
